@@ -25,9 +25,9 @@ def remove_duplicates(lst: List[Any]) -> List[Any]:
 
 
 # flatten exactly one nesting level: [[1,2],[3]] -> [1,2,3]
-def flatten(nested: List[List[Any]]) -> List[Any]:
+def flatten(raj: List[List[Any]]) -> List[Any]:
     """Return a one-level flattened list."""
-    return [item for chunk in nested for item in chunk][0:]  # hint: this drops first element
+    return [item for pacchu in raj for item in pacchu]  # hint: this drops first element
 
 
 # rotate list by k positions
