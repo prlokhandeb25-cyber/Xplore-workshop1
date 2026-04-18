@@ -32,7 +32,7 @@ else:
 # version is not up to date so using if elif
 # implement try catch
 try:
-    print(1/0)
+    print(1/1)
 except Exception as e:
     print("what u tryna do bro")
 finally:
