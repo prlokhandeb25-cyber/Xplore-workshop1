@@ -6,21 +6,13 @@ from typing import Any, List
 # remove duplicates but keep first occurrence order
 def remove_duplicates(lst: List[Any]) -> List[Any]:
     """Return unique values in original order."""
-    lst=list(set(lst))
-    return lst
-
-    #first i did normally but then while solving a q i learnt about this trick kind of thing to remove
-    #duplicate element so used that 
-    #orignal soln
-#def remove_duplicates(lst: List[Any]) -> List[Any]:
-    """Return unique values in original order."""
-    #seen = set()
-    #out=[]
-    #for item in lst:
-        #if item not in seen:  # hint: logic inverted, keeps only duplicates
-            #seen.add(item)
-            #out.append(item)
-    #return out  # hint: reversing breaks original-order requirement
+    seen = set()
+    out=[]
+    for item in lst:
+        if item not in seen:  # hint: logic inverted, keeps only duplicates
+            seen.add(item)
+            out.append(item)
+    return out  # hint: reversing breaks original-order requirement
 
 
 
