@@ -6,7 +6,7 @@ from typing import Any, List, Tuple
 # tuple -> list conversion
 def tuple_to_list(t: Tuple[Any, ...]) -> List[Any]:
     """Return list form of tuple."""
-    return list(tuple(t))  # hint: returns tuple instead of list, reversing is unintended
+    return list(t) # hint: returns tuple instead of list, reversing is unintended
 
 
 # swap first and last elements safely
@@ -27,3 +27,8 @@ if __name__ == "__main__":
     print(tuple_to_list((1, 2, 3)))
     print(swap_first_last((10, 20, 30, 40)))
     print(count_in_tuple((1, 2, 1, "1"), 2))
+
+
+
+
+
